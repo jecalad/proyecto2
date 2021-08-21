@@ -5,7 +5,8 @@
   "main": "src/app.js",
   "scripts": {
     "start": "nodemon src/app.js",
-    "test": "mocha 'test/controllers/*.test.js'"
+    "test": "mocha 'test/controllers/*.test.js'",
+    "test-coverage": "nyc mocha 'test/controllers/*.test.js'"
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
-    "nodemon": "^2.0.9"
+    "nodemon": "^2.0.9",
+    "nyc": "^15.1.0"
   }
 }
